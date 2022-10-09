@@ -13,8 +13,14 @@
 Требуется [Python](https://www.python.org/downloads/) версии 3.7 или выше и установленный [pip](https://pip.pypa.io/en/stable/getting-started/). Для установки необходимых зависимостей используйте команду:
 
 
-1. Для Unix/macOs: `python -m pip install -r ~/bitly_clicks/requirements.txt`
-2. Для Windows: `py -m pip download --destination-directory DIR -r requirements.txt`
+1. Для Unix/macOs:
+```cmd
+python -m pip install -r ~/bitly_clicks/requirements.txt
+```
+2. Для Windows:
+```cmd
+py -m pip download --destination-directory DIR -r requirements.txt
+```
 
 ## Использование
 
