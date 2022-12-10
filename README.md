@@ -1,6 +1,6 @@
 # bitly_clicks
 
-Это python скрипт. При запуске попросит ввести ссылку. При вводе обычной ссылки скрипт создаёт укороченную ссылку формата https://bit.ly/abcde и возвращает её id. При вводе укороченной ссылки выводит число переходов по ссылке.
+Это python скрипт. Имеет необязательный позиционный параметр - ссылку. Если этот параметр не введён, то при запуске попросит ввести ссылку. При вводе обычной ссылки скрипт создаёт укороченную ссылку формата https://bit.ly/abcde и возвращает её id. При вводе укороченной ссылки выводит число переходов по ссылке.
 
 Работает с сайтом https://bitly.com
 
@@ -10,15 +10,13 @@
 
 ## Требования к использованию
 
-Требуется [Python](https://www.python.org/downloads/) версии 3.7 или выше и установленный [pip](https://pip.pypa.io/en/stable/getting-started/). Для установки необходимых зависимостей используйте команду:
-
-
+Требуется [Python](https://www.python.org/downloads/) версии 3.7 или выше и установленный [pip](https://pip.pypa.io/en/stable/getting-started/). Для установки необходимых зависимостей используйте команду:  
 1. Для Unix/macOs:
-```cmd
-python -m pip install -r ~/bitly_clicks/requirements.txt
+```commandline
+python -m pip install -r requirements.txt
 ```
 2. Для Windows:
-```cmd
+```commandline
 py -m pip download --destination-directory DIR -r requirements.txt
 ```
 
@@ -28,13 +26,21 @@ py -m pip download --destination-directory DIR -r requirements.txt
 
 ## Пример использования
 
-Запуск:
-```cmd
-python3 ~bitly_clicks/bitly.py
+Запуск с позиционным параметром - ссылкой https://github.com/:
+```commandline
+python3 bitly.py https://github.com/
+```  
+Вывод:
+```commandline
+Битлинк: bit.ly/...
 ```
 
+Запуск без позиционного параметра:
+```commandline
+python3 bitly.py
+```  
 Вывод:
-```cmd
+```commandline
 Введите ссылку: https://github.com/
 Битлинк: bit.ly/...
 ```
